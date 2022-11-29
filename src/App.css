@@ -14,7 +14,7 @@ body {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 20px;
 }
 
 .card {
@@ -49,40 +49,47 @@ body {
 }
 
 .card .front {
-  border: 2px solid yellow;
-  background: #fff;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  background: rgb(0, 255, 200);
   transform: rotateY(180deg);
 }
 
 .card .back {
   background: #e3b039;
-  font-size: 100px;
   transition: 0.3s ease all;
+  box-sizing: border-box;
+  border: 3px solid black;
+  box-shadow: 0 0 5px 2px red;
 }
-.card .back:hover,
-.button_restart:hover {
+
+.card .back:hover {
   background: #dba8b1;
   transform: scale(1.02);
 }
 
 .button_restart {
   cursor: pointer;
-  margin-top: 15px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px;
   border-radius: 10px;
   background: #eabd55;
   transition: 0.3 ease all;
+  box-shadow: 0px 5px 1px rgba(0, 0, 0.5);
+  width: 50%;
+  margin: 20px auto;
 }
-
-.back {
-  border: 3px solid black;
+.button_restart:active {
+  position: relative;
+  top: 3px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0.5);
 }
 
 .number_of_strokes {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
+  text-align: center;
 }
 .background {
   background-image: url("./Icon/paper.jpg");
