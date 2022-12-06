@@ -1,0 +1,9 @@
+.timer {
+  position: relative;
+  display: flex;
+  flex: 0 1 33.333%;
+  font-size: 50px;
+  font-weight: 700;
+  color: aliceblue;
+  margin: 20px 30px;
+}

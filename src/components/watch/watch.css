@@ -1,0 +1,89 @@
+.watch {
+  display: flex;
+  flex: 0 1 33.333%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.clock {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(iconWatch/clock.png), url(iconWatch/js.png),
+    radial-gradient(
+      circle,
+      rgb(37, 73, 90) 0%,
+      rgb(25, 48, 60) 11%,
+      rgba(9, 33, 1) 38%
+    );
+  background-size: cover;
+  box-shadow: 0 -15px 15px rgba(134, 134, 134, 0.35), inset 0 -15px 15px #191919,
+    0 15px 15px rgba(134, 134, 134, 0.35), inset 0 15px 15px #191919;
+  border-radius: 50%;
+}
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 100;
+}
+.clock .hour,
+.clock .min,
+.clock .sec {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clock .hour .hr {
+  width: 160px;
+  height: 160px;
+}
+.clock .min .mn {
+  width: 190px;
+  height: 190px;
+}
+.clock .sec .sc {
+  width: 230px;
+  height: 230px;
+}
+.hr,
+.mn,
+.sc {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  border-radius: 50%;
+}
+.hr::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 80px;
+  background-color: #ffc600;
+  z-index: 10;
+  border-radius: 6px 6px 0px 0px;
+}
+.mn::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  background-color: #fff;
+  z-index: 11;
+  border-radius: 6px 6px 0px 0px;
+}
+.sc::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background-color: #fff;
+  z-index: 12;
+  border-radius: 6px 6px 0px 0px;
+}
