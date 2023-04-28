@@ -4,12 +4,12 @@ import Timer from "./components/timer/timer";
 import Watch from "./components/watch/watch";
 import "./App.css";
 
-function App() {
+function App(props) {
   return (
     <div className="background">
       <Timer />
       <Main />
-      <Watch />
+      {/*<Watch />*/}
     </div>
   );
 }

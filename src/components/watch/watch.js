@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./watch.css";
 
 function Watch() {
@@ -9,6 +9,7 @@ function Watch() {
 
   setInterval(() => {
     let day = new Date();
+    console.log(day);
     let hh = day.getHours() * 30;
     let mm = day.getMinutes() * deg;
     let ss = day.getSeconds() * deg;
